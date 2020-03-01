@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IMC App</string>
+    <string name="tuto_Button">Tutoriel</string>
+    <string name="imc_Button">Commencer</string>
+    <string name="imc_title">Calculez votre IMC (Indice de Masse Corporelle)</string>
+    <string name="title_imcForm">Effectuez le calcul de votre IMC</string>
+    <string name="weight_kg">Entrez votre poids en Kg</string>
+    <string name="height_cm">Entrez votre taille en cm</string>
+    <string name="validate">Valider</string>
+    <string name="results_title">Vos résultats</string>
+    <string name="title_tuto1">Tutoriel</string>
+</resources>
