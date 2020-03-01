@@ -19,21 +19,21 @@ public class ImcResult extends AppCompatActivity {
         Intent intent = getIntent();
 
         double result = 0;
-        String poids = intent.getStringExtra("EXTRA_Weight");
-        String taille = intent.getStringExtra("EXTRA_Height");
+        String weight = intent.getStringExtra("EXTRA_Weight");
+        String height = intent.getStringExtra("EXTRA_Height");
         TextView textView = findViewById(R.id.textViewResult);
         DecimalFormat df2 = new DecimalFormat("#.###");
         TextView tvResult = findViewById(R.id.tvResult);
 
-        if(!(poids.matches("") || taille.matches("")))
+        if(!(weight.matches("") || height.matches("")))
         {
             try {
-                double dPoids = DecimalFormat.getNumberInstance().parse(poids).doubleValue();
-                double dTaille = DecimalFormat.getNumberInstance().parse(taille).doubleValue();
+                double dWeight = DecimalFormat.getNumberInstance().parse(weight).doubleValue();
+                double dHeight = DecimalFormat.getNumberInstance().parse(height).doubleValue();
 
-                dTaille = dTaille/100;
-                result = dPoids / (Math.pow(dTaille,2));
-                textView.setText(poids + " / " + dTaille + "² = " + Math.floor(result * 1e2) / 1e2 + "\n\n Selon la classification de l'OMS, l'interprétation de votre IMC ("+Math.floor(result * 1e2) / 1e2+"kg/m²) est :");
+                dHeight = dHeight/100;
+                result = dWeight / (Math.pow(dHeight,2));
+                textView.setText(weight + " / " + dHeight + "² = " + Math.floor(result * 1e2) / 1e2 + "\n\n Selon la classification de l'OMS, l'interprétation de votre IMC ("+Math.floor(result * 1e2) / 1e2+"kg/m²) est :");
 
                 if(result < 16)
                 {
