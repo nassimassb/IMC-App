@@ -14,13 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goImc (View view)
-    {
+    public void goImc(View view) {
         startActivity(new Intent(this, ImcForm.class));
     }
 
-    public void goTutorial(View view)
-    {
-        startActivity(new Intent(this,Tuto1.class));
+    public void goTutorial(View view) {
+        startActivity(new Intent(this, Tuto1.class));
     }
 }

@@ -22,7 +22,6 @@ public class ImcResult extends AppCompatActivity {
         String weight = intent.getStringExtra("EXTRA_Weight");
         String height = intent.getStringExtra("EXTRA_Height");
         TextView textView = findViewById(R.id.textViewResult);
-        DecimalFormat df2 = new DecimalFormat("#.###");
         TextView tvResult = findViewById(R.id.tvResult);
 
         if(!(weight.matches("") || height.matches("")))
