@@ -1,12 +1,32 @@
 <resources>
-    <string name="app_name">IMC App</string>
-    <string name="tuto_Button">Tutoriel</string>
-    <string name="imc_Button">Commencer</string>
-    <string name="imc_title">Calculez votre IMC (Indice de Masse Corporelle)</string>
-    <string name="title_imcForm">Effectuez le calcul de votre IMC</string>
-    <string name="weight_kg">Entrez votre poids en Kg</string>
-    <string name="height_cm">Entrez votre taille en cm</string>
-    <string name="validate">Valider</string>
-    <string name="results_title">Vos résultats</string>
-    <string name="title_tuto1">Tutoriel</string>
+    <string name="app_name">BMI Calculator</string>
+    <string name="begin">Begin</string>
+    <string name="whatsBMI">What is a BMI?</string>
+    <string name="settings_btn">Settings</string>
+    <string name="darkmode">Dark mode</string>
+    <string name="change_lang">Change language</string>
+    <string name="back_btn">Back</string>
+    <string name="imc_calc">Calculate your BMI (Body Mass Index)</string>
+    <string name="weight_kg">Enter your weight in Kg</string>
+    <string name="height_cm">Enter your height in Cm</string>
+    <string name="validate">Confirm</string>
+    <string name="results_title">Your results</string>
+    <string name="title_tuto1">Tutorial</string>
+    <string name="bmiText">BMI stands for Body Mass Index. It is a value derived from the mass (weight) and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.</string>
+    <string name="bmiText2">The BMI is a convenient rule of thumb used to broadly categorize a person as underweight, normal weight, overweight, or obese based on tissue mass (muscle, fat, and bone) and height. Commonly accepted BMI ranges are underweight (under 18.5 kg/m2), normal weight (18.5 to 25), overweight (25 to 30), and obese (over 30).</string>
+    <string name="BMI_tab">BMI</string>
+    <string name="inspiration_tab" translatable="false"><![CDATA[Inspiration & info]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="name">Enter your full name (optional)</string>
+    <string name="Age">Enter your age (optional)</string>
+    <string name="advanced">Advanced</string>
+    <string name="me">Me</string>
+    <string name="my_profile">My profile</string>
+    <string name="others">Others</string>
+    <string name="fat_percentage">Enter your fat percentage</string>
+    <string name="water_percentage">Enter your water percentage</string>
+    <string name="muscle_mass">Enter your muscle mass in Kg</string>
+    <string name="metabolic_age">Enter your metabolic age</string>
+    <string name="visceral_fat">Enter your visceral fat</string>
 </resources>

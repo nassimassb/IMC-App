@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".FragmentImcTab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/me"
+                android:textColor="?attr/textColor" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_btn_orange"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/my_profile"
+                android:textColor="@color/buttonTextColor" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/btnOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_btn_orange"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/others"
+                android:textColor="@color/buttonTextColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/Age"
+                android:inputType="none|number"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/height_cm"
+                android:inputType="none|number"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/weight_kg"
+                android:inputType="none|numberDecimal"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/tvadvanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/advanced"
+            android:textColor="?attr/textColor"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutAdvanced"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etFatPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/fat_percentage"
+                android:inputType="none|numberDecimal"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etWaterPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/water_percentage"
+                android:inputType="none|numberDecimal"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etmuscleMassKg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/muscle_mass"
+                android:inputType="none|numberDecimal"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etmetabolicAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/metabolic_age"
+                android:inputType="none|number"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+            <EditText
+                android:id="@+id/etvisceralFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/visceral_fat"
+                android:inputType="none|number"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnAdvancedDown"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/rounded_btn_grey"
+                android:contentDescription="@string/advanced"
+                android:src="@android:drawable/arrow_down_float" />
+
+            <ImageButton
+                android:id="@+id/btnAdvancedUp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/rounded_btn_grey"
+                android:contentDescription="@string/advanced"
+                android:src="@android:drawable/arrow_up_float"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/btnValidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:text="@string/validate"
+            android:textColor="@color/buttonTextColor" />
+
+    </LinearLayout>
+</ScrollView>
