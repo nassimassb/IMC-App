@@ -3,5 +3,6 @@
     <declare-styleable name="ds">
         <attr name="backgroundColor" format="color"/>
         <attr name="textColor" format="color"/>
+        <attr name="hint" format="color"/>
     </declare-styleable>
 </resources>

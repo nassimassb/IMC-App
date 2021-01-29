@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollImc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/backgroundColor"
@@ -67,41 +68,45 @@
                 android:id="@+id/etFullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="textPersonName"
                 android:ems="10"
                 android:hint="@string/name"
                 android:inputType="textPersonName"
                 android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                android:textColorHint="?attr/hint" />
 
             <EditText
                 android:id="@+id/etAge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="none|number"
                 android:ems="10"
                 android:hint="@string/Age"
                 android:inputType="none|number"
                 android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                android:textColorHint="?attr/hint" />
 
             <EditText
                 android:id="@+id/etHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="none|number"
                 android:ems="10"
                 android:hint="@string/height_cm"
                 android:inputType="none|number"
                 android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                android:textColorHint="?attr/hint" />
 
             <EditText
                 android:id="@+id/etWeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="none|numberDecimal"
                 android:ems="10"
                 android:hint="@string/weight_kg"
                 android:inputType="none|numberDecimal"
                 android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                android:textColorHint="?attr/hint" />
 
         </LinearLayout>
 
@@ -127,55 +132,127 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <EditText
-                android:id="@+id/etFatPercentage"
+            <Space
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/fat_percentage"
-                android:inputType="none|numberDecimal"
-                android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                android:layout_margin="5dp" />
 
-            <EditText
-                android:id="@+id/etWaterPercentage"
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/water_percentage"
-                android:inputType="none|numberDecimal"
-                android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/etmuscleMassKg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/muscle_mass"
-                android:inputType="none|numberDecimal"
-                android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/etmetabolicAge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/metabolic_age"
-                android:inputType="none|number"
-                android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/advanced_note"
+                        android:textColor="?attr/colorError"
+                        android:textSize="18sp" />
+                </TableRow>
 
-            <EditText
-                android:id="@+id/etvisceralFat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/visceral_fat"
-                android:inputType="none|number"
-                android:textColor="?attr/textColor"
-                android:textColorHint="?attr/textColor" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/btnBuy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@drawable/rounded_btn_orange"
+                        android:padding="5dp"
+                        android:text="@string/buy_scale"
+                        android:textColor="@color/buttonTextColor" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/etFatPercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="none|numberDecimal"
+                        android:ems="10"
+                        android:hint="@string/fat_percentage"
+                        android:inputType="none|numberDecimal"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/hint" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/etWaterPercentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="none|numberDecimal"
+                        android:ems="10"
+                        android:hint="@string/water_percentage"
+                        android:inputType="none|numberDecimal"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/hint" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/etmuscleMassKg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="none|numberDecimal"
+                        android:ems="10"
+                        android:hint="@string/muscle_mass"
+                        android:inputType="none|numberDecimal"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/hint" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/etmetabolicAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="none|number"
+                        android:ems="10"
+                        android:hint="@string/metabolic_age"
+                        android:inputType="none|number"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/hint" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/etvisceralFat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="none|number"
+                        android:ems="10"
+                        android:hint="@string/visceral_fat"
+                        android:inputType="none|number"
+                        android:textColor="?attr/textColor"
+                        android:textColorHint="?attr/hint" />
+                </TableRow>
+
+            </TableLayout>
+
         </LinearLayout>
 
         <FrameLayout
@@ -207,12 +284,11 @@
             android:layout_margin="10dp" />
 
         <Button
-            android:id="@+id/btnValidate"
+            android:id="@+id/btnConfirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_btn"
             android:text="@string/validate"
             android:textColor="@color/buttonTextColor" />
-
     </LinearLayout>
 </ScrollView>

@@ -24,11 +24,6 @@ public class Tutorial extends AppCompatActivity {
 
     public void backBtn(View view){
         sharedPref.btnAnimation(view);
-        goBack();
-    }
-
-    public void goBack() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        onBackPressed();
     }
 }

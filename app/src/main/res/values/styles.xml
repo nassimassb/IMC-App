@@ -8,6 +8,7 @@
         <item name="backgroundColor">@color/background</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="textColor">@color/lightThemeText</item>
+        <item name="hint">@color/lightThemeHint</item>
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
     </style>
 
@@ -19,6 +20,7 @@
         <item name="backgroundColor">@color/darkBackground</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="textColor">@color/darkThemeText</item>
+        <item name="hint">@color/darkThemeHint</item>
         <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
     </style>
 

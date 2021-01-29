@@ -16,8 +16,19 @@
     <string name="bmiText">IMC est un acronyme pour Indice de Masse Corporelle. C\'est une grandeur qui permet d\'estimer la corpulence d’une personne. Inventé au milieu du xixe siècle par Adolphe Quetelet, mathématicien belge et l\'un des fondateurs de la statistique moderne, cet indice est appelé aussi l\'indice de Quetelet.</string>
     <string name="bmiText2">L\'IMC a été crée pour catégoriser une personne en tant que maigre, normale, en surpoids ou obèse(modéré, élevé ou massive) grâce à la masse tissulaire(muscle, graisse et os) et la taille. Selon la classification de l\'OMS l\'IMC peut avoir différentes valeurs. À moins de 16,5 kg/m² vous êtes en dénutrition ou anorexique, entre 16,5 et 18,5 vous êtes en état de maigreur, entre 18,5 et 25 vous avez un poids normal, entre 25 et 30 vous êtes en surpoids et au dessus de 40 vous êtes en état d\'obésité morbide ou massive.</string>
     <string name="BMI_tab">IMC</string>
-    <string name="name">Entrez votre nom complet (optionnel)</string>
+    <string name="name">Entrez votre nom complet</string>
     <string name="Age">Entrez votre âge (optionnel)</string>
     <string name="advanced">Avancé</string>
     <string name="me">Moi</string>
+    <string name="explanation_others">Ici vous trouverez tous les résultats des formulaires que vous avez enregistré pour d\'autres personnes. Si vous avez enregistré un formulaire sans cocher la case \"Moi\" il apparaîtra automatiquement ici.</string>
+    <string name="my_profile">Mon profil</string>
+    <string name="others">Autres</string>
+    <string name="fat_percentage">Entrez votre pourcentage de graisse</string>
+    <string name="water_percentage">Entrez votre pourcentage d\'eau</string>
+    <string name="muscle_mass">Entrez votre masse musculaire en Kg</string>
+    <string name="metabolic_age">Entrez votre âge métabolique</string>
+    <string name="visceral_fat">Entrez votre graisse viscerale</string>
+    <string name="explanation_profile">Ici vous trouverez tous les résultats des formulaires que vous avez enregistré. Si vous avez enregistré un formulaire en cochant la case \"Moi\" il apparaîtra automatiquement ici.</string>
+    <string name="advanced_note">Attention: Vous aurez besoin d\'une balance impédancemètre pour remplir ces champs.</string>
+    <string name="buy_scale">Acheter une balance</string>
 </resources>

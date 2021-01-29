@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,10 +33,13 @@ public class MainActivity extends AppCompatActivity {
         AdView adView = findViewById(R.id.adView);
 
         AdRequest adRequest = new AdRequest.Builder().build();
+
         adView.loadAd(adRequest);
+
     }
 
     public void goImc(View view) {
+
         startActivity(new Intent(this, ImcCalculator.class));
     }
 

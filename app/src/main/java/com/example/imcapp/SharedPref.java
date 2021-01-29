@@ -30,6 +30,19 @@ public class SharedPref {
         return state;
     }
 
+    //boolean to know if we need to show the ad or not
+    public void setAdShown(Boolean state){
+        SharedPreferences.Editor editor = mySharedPref.edit();
+        editor.putBoolean("showAd",state);
+        editor.commit();
+    }
+
+    //get the ad boolean
+    public Boolean adShown(){
+        Boolean state = mySharedPref.getBoolean("showAd", false);
+        return state;
+    }
+
     public static void btnAnimation(View view){
         //little animation when button is clicked
         AlphaAnimation animation1 = new AlphaAnimation(0.2f, 1.0f);
@@ -66,5 +79,10 @@ public class SharedPref {
         SharedPreferences pref = context.getSharedPreferences("settings", Activity.MODE_PRIVATE);
         String language = pref.getString("My lang", java.util.Locale.getDefault().getLanguage());
         setLocale(language, context);
+    }
+
+    public String getLanguage(Context context){
+        SharedPreferences pref = context.getSharedPreferences("Settings", Activity.MODE_PRIVATE);
+        return pref.getString("My lang", java.util.Locale.getDefault().getLanguage());
     }
 }

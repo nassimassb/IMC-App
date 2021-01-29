@@ -18,7 +18,7 @@
     <string name="inspiration_tab" translatable="false"><![CDATA[Inspiration & info]]></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="name">Enter your full name (optional)</string>
+    <string name="name">Enter your full name</string>
     <string name="Age">Enter your age (optional)</string>
     <string name="advanced">Advanced</string>
     <string name="me">Me</string>
@@ -29,4 +29,9 @@
     <string name="muscle_mass">Enter your muscle mass in Kg</string>
     <string name="metabolic_age">Enter your metabolic age</string>
     <string name="visceral_fat">Enter your visceral fat</string>
+    <string name="explanation_others">Here you will find all the records you have saved for other people. When you save a record without checking the \"Me\" checkbox it automatically shows up here.</string>
+    <string name="explanation_profile">Here you will find all the records you have saved. When you save a record and check the \"Me\" checkbox it automatically shows up here.</string>
+    <string name="advanced_note">Note: You will need a Body composition scale to fill these fields.</string>
+    <string name="buy_scale">Buy a scale</string>
+    <string name="close" translatable="false">close</string>
 </resources>

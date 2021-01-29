@@ -27,15 +27,13 @@ public class ImcCalculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imc_calculator);
 
-        TabLayout tabbar = findViewById(R.id.tabbar);
-        TabItem tabImc = findViewById(R.id.tabImc);
-        TabItem tabInspiration = findViewById(R.id.tabInspiration);
+        TabLayout tabBar = findViewById(R.id.tabbar);
         ViewPager viewPager = findViewById(R.id.viewpager);
 
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabbar.getTabCount());
+        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabBar.getTabCount());
         viewPager.setAdapter(pagerAdapter);
 
-        tabbar.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tabBar.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
@@ -55,6 +53,7 @@ public class ImcCalculator extends AppCompatActivity {
     }
 
     public void backBtn(View view){
+        sharedPref.btnAnimation(view);
         onBackPressed();
     }
 }
